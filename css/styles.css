@@ -18,6 +18,7 @@ ul {
   color: #fff;
   padding-top: 3vh;
   padding-bottom: 3vh;
+  text-transform: uppercase;
 }
 .nav li a:hover {
   background-color: #27b3b2;
@@ -57,9 +58,31 @@ ul {
 #map {
   height: 100vh;
 }
-#id-show-menu {
+.ma-menu-link {
   position: absolute;
   z-index: 5;
   left: 7vw;
   top: 1vh;
+  color: #242b2e;
+}
+.ma-menu-link:focus,
+.ma-menu-link:hover {
+  color: #31393d;
+}
+.ma-contact {
+  position: absolute;
+  z-index: 5;
+  left: 10vw;
+  width: 40vw;
+  background-color: #fff;
+}
+.ma-contact__title {
+  font-size: 1.5em;
+  padding: 0 1vw;
+}
+.ma-contact__text {
+  padding: 0 1vw;
+}
+.ma-contact .ma-content-form {
+  padding: 2vw;
 }
