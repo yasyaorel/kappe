@@ -1,8 +1,11 @@
 // Fonts
-
 // Variables
 @background_color: #e7e7e7;
-
+@grey_color: #b3b7b8;
+@light-color: #e2e2e2;
+@azure_color: #27b3b2;
+@menu_dark: #242b2e;
+@menu_light: #31393d;
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -14,4 +17,69 @@ body {
     height: 100%;
     font-family: "Arial", sans-serif;
     background-color: @background_color;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+.nav {
+    li {
+        a {
+            color: #fff;
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+            &:hover {
+                background-color: @azure_color;
+            }
+        }
+        .ma-brand {
+            background-color: #fff;
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+            &:hover {
+                background-color: inherit;
+            }
+        }
+    }
+}
+
+.ma-submenu,
+.ma-social {
+    text-decoration: none;
+    li {
+        a {
+            color: @menu_light;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.ma-menu {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    padding: 0;
+    .ma-navigation {
+        height: 100%;
+    }
+}
+
+#id-map-wrapper {
+    padding: 0;
+}
+
+#map {
+    height: 100vh;
+}
+
+#id-show-menu {
+    position: absolute;
+    z-index: 5;
+    left: 7vw;
+    top:1vh;
 }

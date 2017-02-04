@@ -9,3 +9,57 @@ body {
   font-family: "Arial", sans-serif;
   background-color: #e7e7e7;
 }
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: right;
+}
+.nav li a {
+  color: #fff;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+.nav li a:hover {
+  background-color: #27b3b2;
+}
+.nav li .ma-brand {
+  background-color: #fff;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+.nav li .ma-brand:hover {
+  background-color: inherit;
+}
+.ma-submenu,
+.ma-social {
+  text-decoration: none;
+}
+.ma-submenu li a,
+.ma-social li a {
+  color: #31393d;
+}
+.ma-submenu li a:hover,
+.ma-social li a:hover {
+  color: #fff;
+}
+.ma-menu {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  padding: 0;
+}
+.ma-menu .ma-navigation {
+  height: 100%;
+}
+#id-map-wrapper {
+  padding: 0;
+}
+#map {
+  height: 100vh;
+}
+#id-show-menu {
+  position: absolute;
+  z-index: 5;
+  left: 7vw;
+  top: 1vh;
+}
