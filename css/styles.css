@@ -1,7 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Carrois+Gothic%7CFira+Sans:100,300,400,700');
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto-Italic";
+  src: url("../fonts/Roboto-Italic.ttf");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../fonts/Roboto-Thin.ttf");
+}
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+}
+* {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 html,
 body {
@@ -145,4 +169,98 @@ ul {
 }
 .gallery .full_block .wrapper-image .hover-text .arrow {
   font-size: 30px !important;
+}
+.gallery .full_block .wrapper-image .hover-text .ma-about {
+  border: 25px solid #b3b7b8;
+  padding: 30px;
+}
+.gallery .full_block .wrapper-image .hover-text .ma-about__bord-bot {
+  border-bottom: 1px solid #e2e2e2;
+}
+.gallery .full_block .wrapper-image .hover-text .ma-about__marg-bot {
+  position: relative;
+  margin-bottom: 10px;
+}
+.gallery .full_block .wrapper-image .hover-text .ma-about__l-box {
+  border-right: 1px solid #e2e2e2;
+}
+.gallery .full_block .wrapper-image .hover-text .ma-about h3 {
+  font-family: "Roboto-Thin", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: black;
+}
+.gallery .full_block .wrapper-image .hover-text .ma-about h4 {
+  font-family: "Roboto-Thin", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  color: #727272;
+}
+.gallery .full_block .wrapper-image .hover-text .ma-about h5 {
+  display: inline-block;
+  float: right;
+  font-family: "Roboto-Light", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: black;
+}
+.gallery .full_block .wrapper-image .hover-text .ma-about p {
+  font-family: "Roboto-Light", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #a3a3a3;
+}
+.gallery .full_block .wrapper-image .hover-text .ma-about__carousel-pad {
+  margin: -10px;
+  font-family: "Roboto-Italic", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  color: #FFF;
+}
+.gallery .full_block .wrapper-image .hover-text .ma-about__carousel-bg {
+  background-color: #27b3b2;
+  width: 80%;
+}
+.gallery .full_block .wrapper-image .hover-text .ma-about__carousel-info {
+  padding: 20px;
+  border: 1px solid #e2e2e2;
+}
+.gallery .full_block .wrapper-image .hover-text .ma-about__list li a {
+  font-family: "Roboto-Light", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  color: #a3a3a3;
+}
+.gallery .full_block .wrapper-image .hover-text .ma-about__list li a:hover {
+  color: #27b3b2;
+}
+.gallery .full_block .wrapper-image .hover-text .ma-about__layout {
+  position: absolute;
+  background-color: #27b3b2;
+  opacity: 0;
+  height: 100%;
+  width: 83%;
+}
+.gallery .full_block .wrapper-image .hover-text .ma-about__layout:hover {
+  opacity: 0.8;
+}
+.gallery .full_block .wrapper-image .hover-text .ma-about__layout h6 {
+  padding-top: 20px;
+  text-align: center;
+  font-family: "Roboto-Bold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFF;
+}
+.gallery .full_block .wrapper-image .hover-text .ma-about__layout h6 span {
+  font-family: "Roboto-Thin", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 26px;
+  color: #FFF;
+}
+.gallery .carousel-indicators {
+  display: none;
+}
+.gallery .progress-bar {
+  background-color: #e2e2e2;
 }
