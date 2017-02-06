@@ -78,14 +78,15 @@ sans-serif; */
             font-size: 15px;
             line-height: 26px;
             color: #727272;
-        }
-        h5 {
-            display: inline-block;
-            float: right;
-            font-family: "Roboto-Light", Arial, sans-serif;
-            font-size: 14px;
-            line-height: 26px;
-            color: black;
+            & span {
+                display: inline-block;
+                float: right;
+                margin-right: -10px;
+                font-family: "Roboto-Light", Arial, sans-serif;
+                font-size: 14px;
+                line-height: 26px;
+                color: black;
+            }
         }
         & p {
             font-family: "Roboto-Light", Arial, sans-serif;
@@ -102,8 +103,10 @@ sans-serif; */
                 color: #FFF;
             }
             &-bg {
-                background-color: @azure_color;
-                width: 80%;
+                background-color: #27b3b2;
+                width: 90%;
+                height: 100%;
+                bottom: 0;
             }
             &-info {
                 padding: 20px;
@@ -111,6 +114,7 @@ sans-serif; */
             }
         }
         &__list li a {
+            padding-left: 10px;
             font-family: "Roboto-Light", Arial, sans-serif;
             font-size: 14px;
             line-height: 28px;
@@ -145,10 +149,27 @@ sans-serif; */
         }
     }
     
+    .glyphicon {
+        color: @azure_color;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    
     .carousel-indicators {
         display: none;
     }
     
     .progress-bar {
         background-color: @light-color;
+    }
+    
+    @media screen and (min-width: 768px) {
+        .carousel-caption {
+            text-align: left;
+            padding-left: 30px;
+            right: 20%;
+            left: 15%;
+            padding-bottom: 20px;
+        }
     }
