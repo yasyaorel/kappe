@@ -30,6 +30,7 @@
 @text-grey-color: #a3a3a3;
 @light-color: #e2e2e2;
 @grey_color: #b3b7b8;
+
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -47,6 +48,7 @@
 * {
     .transition
 } //using the mixin
+
 html,
 body {
     height: 100%;
@@ -231,135 +233,149 @@ ul {
             }
         }
         &__layout {
-        .wrapper-image {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            opacity: 0;
-            background-color: #1ab5b3;
-            display: flex;
-            .hover-text {
-                color: white;
-                text-align: center;
-                margin: auto;
-                .arrow {
-                    font-size: 30px !important;
-                }
-                .ma-about {
-                    border: 25px solid @grey_color;
-                    padding: 30px;
-                    &__bord-bot {
-                        border-bottom: 1px solid @light-color;
-                    }
-                    &__marg-bot {
-                        position: relative;
-                        margin-bottom: 10px;
-                    }
-                    &__l-box {
-                        border-right: 1px solid @light-color;
-                    }
-                    & h3 {
-                        font-family: "Roboto-Thin", Arial, sans-serif;
-                        font-size: 24px;
-                        line-height: 26px;
-                        color: black;
-                    }
-                    & h4 {
-                        font-family: "Roboto-Thin", Arial, sans-serif;
-                        font-size: 15px;
-                        line-height: 26px;
-                        color: #727272;
-                    }
-                    h5 {
-                        display: inline-block;
-                        float: right;
-                        font-family: "Roboto-Light", Arial, sans-serif;
-                        font-size: 14px;
-                        line-height: 26px;
-                        color: black;
-                    }
-                    & p {
-                        font-family: "Roboto-Light", Arial, sans-serif;
-                        font-size: 18px;
-                        line-height: 30px;
-                        color: @text-grey-color;
-                    }
-                    &__carousel {
-                        &-pad {
-                            margin: -10px;
-                            font-family: "Roboto-Italic", Arial, sans-serif;
-                            font-size: 15px;
-                            line-height: 26px;
-                            color: #FFF;
-                        }
-                        &-bg {
-                            background-color: @azure_color;
-                            width: 80%;
-                        }
-                        &-info {
-                            padding: 20px;
-                            border: 1px solid @light-color;
-                        }
-                    }
-                    &__list li a {
-                        font-family: "Roboto-Light", Arial, sans-serif;
-                        font-size: 14px;
-                        line-height: 28px;
-                        color: @text-grey-color;
-                        &:hover {
-                            color: @azure_color;
-                        }
-                    }
-                    &__layout {
-                        position: absolute;
-                        background-color: @azure_color;
-                        opacity: 0;
-                        height: 100%;
-                        width: 83%;
-                        &:hover {
-                            opacity: 0.8;
-                        }
-                        & h6 {
-                            padding-top: 20px;
-                            text-align: center;
-                            font-family: "Roboto-Bold", Arial, sans-serif;
-                            font-size: 16px;
-                            line-height: 26px;
-                            color: #FFF;
-                            & span {
-                                font-family: "Roboto-Thin", Arial, sans-serif;
-                                font-size: 13px;
-                                line-height: 26px;
-                                color: #FFF;
-                            }
-                        }
+            .wrapper-image {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                background-color: #1ab5b3;
+                display: flex;
+                .hover-text {
+                    color: white;
+                    text-align: center;
+                    margin: auto;
+                    .arrow {
+                        font-size: 30px !important;
                     }
                 }
             }
         }
     }
-    .glyphicon {
-        color: @azure_color;
+}
+
+
+.ma-about {
+    border: 25px solid @grey_color;
+    background-color: #FFF;
+    padding: 30px;
+    &__bord-bot {
+        border-bottom: 1px solid @light-color;
+    }
+    &__marg-bot {
+        position: relative;
+        margin-bottom: 10px;
+    }
+    &__l-box {
+        border-right: 1px solid @light-color;
+    }
+    & h3 {
+        font-family: "Roboto-Thin", Arial, sans-serif;
+        font-size: 24px;
+        line-height: 26px;
+        color: black;
+    }
+    & h4 {
+        font-family: "Roboto-Thin", Arial, sans-serif;
+        font-size: 15px;
+        line-height: 26px;
+        color: #727272;
+        & span {
+            display: inline-block;
+            float: right;
+            margin-right: -10px;
+            font-family: "Roboto-Light", Arial, sans-serif;
+            font-size: 14px;
+            line-height: 26px;
+            color: black;
+        }
+    }
+    & p {
+        font-family: "Roboto-Light", Arial, sans-serif;
+        font-size: 18px;
+        line-height: 30px;
+        color: @text-grey-color;
+    }
+    &__carousel {
+        &-pad {
+            margin: -10px;
+            font-family: "Roboto-Italic", Arial, sans-serif;
+            font-size: 15px;
+            line-height: 26px;
+            color: #FFF;
+        }
+        &-bg {
+            background-color: @azure_color;
+            width: 90%;
+            height: 100%;
+            bottom: 0;
+        }
+        &-info {
+            padding: 20px;
+            border: 1px solid @light-color;
+        }
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+        & li a {
+            padding-left: 10px;
+            font-family: "Roboto-Light", Arial, sans-serif;
+            font-size: 14px;
+            line-height: 28px;
+            color: @text-grey-color;
+            &:hover {
+                color: @azure_color;
+            }
+        }
+    }
+    &__layout {
+        position: absolute;
+        background-color: @azure_color;
+        opacity: 0;
+        height: 100%;
+        width: 83%;
         &:hover {
-            transform: scale(1.05);
+            opacity: 0.8;
+        }
+        & h6 {
+            padding-top: 20px;
+            text-align: center;
+            font-family: "Roboto-Bold", Arial, sans-serif;
+            font-size: 16px;
+            line-height: 26px;
+            color: #FFF;
+            & span {
+                font-family: "Roboto-Thin", Arial, sans-serif;
+                font-size: 13px;
+                line-height: 26px;
+                color: #FFF;
+            }
         }
     }
-    
-    .carousel-indicators {
-        display: none;
+}
+
+.glyphicon {
+    color: @azure_color;
+    &:hover {
+        transform: scale(1.05);
     }
-    .progress-bar {
-        background-color: @light-color;
-    }
-    
-    @media screen and (min-width: 768px) {
-        .carousel-caption {
-            text-align: left;
-            padding-left: 30px;
-            right: 20%;
-            left: 15%;
-            padding-bottom: 20px;
-        }
-    }
+}
+
+.carousel-indicators {
+    display: none;
+}
+
+.progress-bar {
+    background-color: @light-color;
+}
+
+.carousel-caption {
+    text-align: left;
+    padding-left: 30px;
+    right: 20%;
+    left: 15%;
+    padding-bottom: 20px;
+}
