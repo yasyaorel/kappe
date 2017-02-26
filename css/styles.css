@@ -38,6 +38,9 @@ ul {
   padding: 0;
   text-align: right;
 }
+.nav li {
+  border-bottom: 1px solid #242b2e;
+}
 .nav li a {
   color: #fff;
   padding-top: 3vh;
@@ -47,6 +50,22 @@ ul {
 .nav li a:hover {
   background-color: #27b3b2;
 }
+.nav li span {
+  font-size: 19px;
+  line-height: 32px;
+  color: #27b3b2;
+}
+.nav li span:hover {
+  background-color: inherit;
+}
+.nav li span a {
+  text-decoration: none;
+  padding: 10px;
+  color: #27b3b2;
+}
+.nav li span a:hover {
+  background-color: inherit;
+}
 .nav li .ma-brand {
   background-color: #fff;
   padding-top: 3vh;
@@ -55,17 +74,45 @@ ul {
 .nav li .ma-brand:hover {
   background-color: inherit;
 }
-.ma-submenu,
-.ma-social {
-  text-decoration: none;
+.nav .ma-link-home {
+  background-color: #30383C;
 }
-.ma-submenu li a,
-.ma-social li a {
+.nav .ma-link-work {
+  background-color: #31393C;
+}
+.nav .ma-link-about {
+  background-color: #31393D;
+}
+.nav .ma-link-blog {
+  background-color: #31383c;
+}
+.nav .ma-link-contact {
+  background-color: #31393d;
+}
+.nav .ma-link-filter {
+  border-bottom: none;
+}
+.ma-submenu,
+.ma-social,
+.ma-copy {
+  text-align: right;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+.ma-submenu a,
+.ma-social a,
+.ma-copy a {
   color: #31393d;
 }
-.ma-submenu li a:hover,
-.ma-social li a:hover {
-  color: #fff;
+.ma-submenu a:hover,
+.ma-social a:hover,
+.ma-copy a:hover {
+  color: #FFF;
+}
+.ma-submenu a img:hover,
+.ma-social a img:hover,
+.ma-copy a img:hover {
+  transform: scale(1.05);
 }
 .ma-menu {
   position: absolute;

@@ -30,7 +30,6 @@
 @text-grey-color: #a3a3a3;
 @light-color: #e2e2e2;
 @grey_color: #b3b7b8;
-
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -48,7 +47,6 @@
 * {
     .transition
 } //using the mixin
-
 html,
 body {
     height: 100%;
@@ -63,7 +61,8 @@ ul {
 }
 
 .nav {
-    li {
+    & li {
+        border-bottom: 1px solid @menu_dark;
         a {
             color: #fff;
             padding-top: 3vh;
@@ -71,6 +70,22 @@ ul {
             text-transform: uppercase;
             &:hover {
                 background-color: @azure_color;
+            }
+        }
+        & span {
+            font-size: 19px;
+            line-height: 32px;
+            color: @azure_color;
+            &:hover {
+                background-color: inherit;
+            }
+            & a {
+                text-decoration: none;
+                padding: 10px;
+                color: @azure_color;
+                &:hover {
+                    background-color: inherit;
+                }
             }
         }
         .ma-brand {
@@ -82,17 +97,39 @@ ul {
             }
         }
     }
+    & .ma-link-home {
+        background-color: #30383C;
+    }
+    & .ma-link-work {
+        background-color: #31393C;
+    }
+    & .ma-link-about {
+        background-color: #31393D;
+    }
+    & .ma-link-blog {
+        background-color: #31383c
+    }
+    & .ma-link-contact {
+        background-color: #31393d;
+    }
+    & .ma-link-filter {
+        border-bottom: none;
+    }
 }
 
 .ma-submenu,
-.ma-social {
-    text-decoration: none;
-    li {
-        a {
-            color: @menu_light;
-            &:hover {
-                color: #fff;
-            }
+.ma-social,
+.ma-copy {
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    a {
+        color: @menu_light;
+        &:hover {
+            color: #FFF;
+        }
+        & img:hover {
+            transform: scale(1.05);
         }
     }
 }
@@ -254,7 +291,6 @@ ul {
         }
     }
 }
-
 
 .ma-about {
     border: 25px solid @grey_color;
